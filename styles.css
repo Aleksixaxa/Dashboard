@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* whole page */
+.page-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.page-wrapper .header-wrapper {
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
+}
+
+.page-wrapper .dashboard {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+/* Aside Component */
+.header-wrapper {
+  background-color: #486edb;
+}
+
+.header-wrapper header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 100vh;
+  margin-top: 1em;
+  padding: 0.5em;
+}
+
+.header-wrapper header .name {
+  color: #f8f9fc;
+}
+
+.header-wrapper header nav {
+  height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 4em;
+}
+
+.header-wrapper header nav .links-group h4 {
+  color: #f8f9fc;
+  opacity: 0.5;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.header-wrapper header nav .links-group li {
+  list-style: none;
+  padding: 0.2em;
+}
+
+.header-wrapper header nav .links-group li a {
+  text-decoration: none;
+  color: #f8f9fc;
+}
+/*# sourceMappingURL=styles.css.map */
