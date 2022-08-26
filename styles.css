@@ -1,86 +1,115 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* whole page */
 .page-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   height: 100vh;
 }
-
 .page-wrapper .header-wrapper {
-  -webkit-box-flex: 0.5;
-      -ms-flex: 0.5;
-          flex: 0.5;
+  flex: 0.5;
 }
-
 .page-wrapper .dashboard {
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
+  flex: 2;
+  background-color: #F0F0F0;
 }
 
 /* Aside Component */
 .header-wrapper {
   background-color: #486edb;
 }
-
 .header-wrapper header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  height: 100vh;
-  margin-top: 1em;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+  margin: 0 0 0 0.5em;
   padding: 0.5em;
 }
-
 .header-wrapper header .name {
   color: #f8f9fc;
 }
-
 .header-wrapper header nav {
-  height: 20vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  height: 100%;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  flex-direction: column;
+  justify-content: space-around;
   margin-top: 4em;
 }
-
 .header-wrapper header nav .links-group h4 {
   color: #f8f9fc;
   opacity: 0.5;
   font-weight: 700;
   text-transform: uppercase;
 }
-
 .header-wrapper header nav .links-group li {
   list-style: none;
   padding: 0.2em;
 }
-
 .header-wrapper header nav .links-group li a {
   text-decoration: none;
   color: #f8f9fc;
 }
-/*# sourceMappingURL=styles.css.map */
+
+/* Dashboard Component */
+.dashboard {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.dashboard h2 {
+  text-transform: uppercase;
+  margin: 0 0 1em 0;
+  color: #5a5c69;
+}
+
+.small-boxes-wrapper {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 2em;
+}
+.small-boxes-wrapper .small-box-wrapper {
+  background-color: #36b9cc;
+  padding: 1em;
+}
+.small-boxes-wrapper .small-box-wrapper h4 {
+  color: #5a5c69;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.small-boxes-wrapper .small-box-wrapper .text {
+  color: #f8f9fc;
+  margin-top: 0.5em;
+}
+
+/* to-do-list Component */
+.rest-of-dashboard {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+}
+
+.dashboard-box {
+  background-color: #f8f9fc;
+  align-self: flex-start;
+  padding: 3em;
+  border-radius: 2px;
+}
+.dashboard-box .add-new-item {
+  border: 1px solid #5a5c69;
+  padding: 0 0.5em;
+  color: #5a5c69;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: pointer;
+}/*# sourceMappingURL=styles.css.map */
